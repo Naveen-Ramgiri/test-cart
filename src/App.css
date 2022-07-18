@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Muli";
+  src: url("./fonts/Muli/muli-regular.woff2") format("woff2"),
+    url("./fonts/Muli/muli-regular.woff") format("woff"),
+    url("./fonts/Muli/Muli-Regular.ttf") format("ttf");
+  font-weight: bold;
+  font-display: swap;
+}
+
+* {
+  margin: 0px;
+}
+
+body{
+  font-family: "Muli", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}

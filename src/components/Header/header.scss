@@ -1,0 +1,133 @@
+@import '../../Sass/Base/variables';
+
+
+.header {
+    border-bottom: 1px solid #dcdcdc;
+    padding: 13px 0;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+
+    &__content {
+        @include flex-props;
+        align-items: center;
+    }
+
+    &__logo a span {
+        text-decoration: none;
+        font-size: 30px;
+        color: $secondary-color;
+        font-family: 'Righteous';
+        letter-spacing: 5px;
+        font-weight: lighter;
+        text-decoration: none;
+    }
+
+    &__logo a:hover {
+        text-decoration: none;
+    }
+
+    &__logo a span:nth-child(1) {
+        display: inline-block;
+        margin: 0;
+        background: linear-gradient(to right, #3D84FF 50%, #172026 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__categories {
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin-bottom: 0;
+
+            li a {
+
+                text-decoration: none;
+                color: $secondary-color;
+                font-size: 16px;
+                margin-left: 15px;
+            }
+        }
+    }
+
+    &__icons {
+
+        span {
+            font-size: 20px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            justify-content: flex-end;
+            margin-bottom: 0;
+
+            li a {
+                margin-left: 20px;
+                text-decoration: none;
+                color: $secondary-color;
+                font-size: 16px;
+            }
+
+            img {
+                vertical-align: middle;
+            }
+
+            .itemnumbers {
+                position: relative;
+
+                a {
+                    font-size: 20px;
+                }
+
+                span {
+                    padding-left: 5px;
+                    padding-top: 1px;
+                    position: absolute;
+                    top: -5px;
+                    right: -11px;
+                    background: #000;
+                    color: #fff;
+                    width: 17px;
+                    height: 17px;
+                    border-radius: 50px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.sign {
+
+    .dropbtn {
+        padding-bottom: 30px;
+    }
+
+    .dropdown-content {
+        right: 30px;
+        top: 45px;
+        left: 0;
+        padding: 0;
+        box-shadow: none;
+
+    }
+}
+
+
+@include responsive(tablet) {
+    .header {
+        display: none;
+    }
+}
+
+@include responsive(phone) {
+    .header {
+        display: none;
+    }
+}
